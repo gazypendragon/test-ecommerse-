@@ -4,7 +4,7 @@ pipeline {
        terraform 'terraform'
     }
     stages {
-        stage('Git checkout') {
+        git branch: 'main', credentialsId: 'github-id', url: 'https://github.com/gazypendragon/Terraform-aws-s3bucket.git'
            steps{
              checkout scm
             }
