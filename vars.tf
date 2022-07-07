@@ -1,5 +1,5 @@
 variable "bucket_name" {
-    default = "s3-titus-19159"
+    default = "s3-choh-19159"
 }
 variable "acl_value" {
     default = "private"
