@@ -8,8 +8,8 @@ variable "region" {
     default = "us-east-2"
 }
 variable "aws_access_key" {
-    default = "AKIAZGRWXXLZZHOFPDJW"
+    default = "AKIAZGRWXXLZZARVICDZ"
 }
 variable "aws_secret_key" {
-    default = "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"
+    default = "SYLcvFeYq1m2Q74eJZFI2PdpARmIf7OC28ljQAQG"
 }
