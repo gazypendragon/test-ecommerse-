@@ -3,9 +3,10 @@ provider "aws" {
   shared_credentials_file = "/var/lib/jenkins/.aws/credentials"
 }
 terraform {
-  backend "s3" {
-    bucket = "tf-friday-19159"
-    key    = "terraform.tstate"
-    region = "us-east-2"
-  }
+ 
+output "s3_bucket_name" {
+  value = aws_s3_bucket.my-s3-bucket.id
+}
+output "s3_bucket_region" {
+    value = aws_s3_bucket.my-s3-bucket.region
 }
